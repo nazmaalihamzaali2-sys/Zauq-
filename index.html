@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZAUQ - Elegance in Every Detail</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-color: #f0f4f8;
-      color: #2e3a59;
-    }
-
-    .glow {
-      text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
-    }
-
-    .store-lines {
-      font-style: italic;
-      color: #8a9cb7;
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
-
-    .whatsapp-btn {
-      background-color: #25d366;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #128c7e;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAUQ - Elegance in Every Detail</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #1a1a1a, #333);
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            color: gold;
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p.tagline {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #e0c063;
+        }
+        header p.description {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: #c0c0c0;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+            gap: 2rem;
+        }
+        .product {
+            background-color: #222;
+            border: 1px solid #444;
+            border-radius: 15px;
+            padding: 1rem;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h2 {
+            color: gold;
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .product a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .product a:hover {
+            background-color: #128C7E;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #000;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        footer span.instagram {
+            display: block;
+            margin-top: 0.3rem;
+            color: #e0c063;
+        }
+    </style>
 </head>
+<body>
+    <header>
+        <h1>ZAUQ</h1>
+        <p class="tagline">Elegance in Every Detail</p>
+        <p class="description">Timeless pieces made for you — bold, classy, and unforgettable. Crafted with soul, worn with pride.</p>
+    </header>
 
-<body class="font-sans">
-
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-teal-100 to-blue-200 py-20 text-center text-gray-800" data-aos="fade-down">
-    <h1 class="text-5xl font-bold tracking-widest glow animate-pulse">ZAUQ</h1>
-    <p class="text-xl text-gray-700 mt-2 animate-fade-in">Elegance in Every Detail</p>
-    <p class="store-lines">Unique, handcrafted jewelry to make you shine!</p>
-    <div class="mt-6 flex justify-center">
-      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_lwkmkr.json" background="transparent" speed="1"
-        style="width: 150px; height: 150px;" loop autoplay></lottie-player>
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <section class="py-16 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12 animate-bounce">Featured Products</h2>
-    <div class="grid gap-10 md:grid-cols-2">
-      <!-- Black Clover Chain -->
-      <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-yellow-400/30"
-        data-aos="zoom-in" data-aos-delay="100">
-        <img src="https://i.postimg.cc/d3grSYfj/IMG-20250801-233501-232.jpg" alt="Black Clover Chain"
-          class="w-full max-h-96 object-contain bg-black p-4">
-        <div class="p-6 text-white">
-          <h3 class="text-xl font-semibold mb-2">Black Clover Chain</h3>
-          <p class="text-gray-400 mb-4">Stylish gold-finish chain featuring elegant black clover charms. Perfect for bold
-            looks.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-lg font-bold text-yellow-400">PKR 399</span>
-            <a href="https://wa.me/923414503595" target="_blank" class="whatsapp-btn">Order on WhatsApp</a>
-          </div>
+    <section class="products">
+        <div class="product">
+            <img src="https://i.postimg.cc/d3grSYfj/IMG-20250801-233501-232.jpg" alt="Black Chain">
+            <h2>Black Chain</h2>
+            <p>Price: Rs. 399</p>
+            <a href="https://wa.me/923414503595?text=Hi! I'm interested in the Black Chain from ZAUQ." target="_blank">Contact on WhatsApp</a>
         </div>
-      </div>
 
-      <!-- Bestie Heart & Bunny Locket -->
-      <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-yellow-400/30"
-        data-aos="zoom-in" data-aos-delay="200">
-        <img src="https://i.postimg.cc/kgsFqkRq/bestie.jpg" alt="Bestie Heart & Bunny Locket"
-          class="w-full max-h-96 object-contain bg-black p-4">
-        <div class="p-6 text-white">
-          <h3 class="text-xl font-semibold mb-2">Bestie Heart & Bunny Locket</h3>
-          <p class="text-gray-400 mb-4">Celebrate strong friendships with this adorable heart and bunny pendant combo.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-lg font-bold text-yellow-400">PKR 599</span>
-            <a href="https://wa.me/923414503595" target="_blank" class="whatsapp-btn">Order on WhatsApp</a>
-          </div>
+        <div class="product">
+            <img src="https://i.postimg.cc/kgsFqkRq/bestie.jpg" alt="Bestie Locket">
+            <h2>Bestie Locket</h2>
+            <p>Price: Rs. 599</p>
+            <a href="https://wa.me/923414503595?text=Hi! I'm interested in the Bestie Locket from ZAUQ." target="_blank">Contact on WhatsApp</a>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-white py-6 text-center" data-aos="fade-up">
-    <p>&copy; 2025 <span class="text-yellow-500 font-bold">ZAUQ</span>. All rights reserved.</p>
-  </footer>
-
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
-
+    <footer>
+        &copy; 2025 ZAUQ. All rights reserved.
+        <span class="instagram">Follow us on Instagram: @zauq.store</span>
+    </footer>
 </body>
-
-                                                               </html>
+  </html> 
