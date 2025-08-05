@@ -1,90 +1,93 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAUQ - Elegance in Every Detail</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #fefcf9;
-            color: #1a1a1a;
-        }h1, h2, h3 {
-        font-family: 'Playfair Display', serif;
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZAUQ - Elegance in Every Detail</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            primary: '#3e2c2c',
+            accent: '#d2b48c',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
     }
-
-    .hero {
-        background: linear-gradient(to bottom right, #fff8f0, #f7e8d0);
-        padding: 3rem 1rem;
-        text-align: center;
+    .fade-in {
+      animation: fadeIn 2s ease-in;
     }
-
-    .product img {
-        object-fit: cover;
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-
-    .brand-logo {
-        width: 120px;
-        height: auto;
-        margin: 0 auto;
-    }
-</style>
-
-</head><body>
-    <header class="hero">
-        <img src="https://i.postimg.cc/G2VvB4Pt/zauq-logo.png" alt="ZAUQ Logo" class="brand-logo">
-        <h1 class="text-4xl font-bold mt-4">ZAUQ</h1>
-        <h2 class="text-xl italic mt-2 text-gray-700">Elegance in Every Detail</h2>
-        <p class="mt-2 italic text-gray-600">Jewelry that speaks your soul. Handpicked for besties and beauties alike.</p>
-        <p class="mt-4 text-gray-700">Discover timeless elegance and thoughtful craftsmanship with every piece. Designed to add meaning, emotion, and sparkle to your story.</p>
-    </header><section class="px-4 py-8 max-w-4xl mx-auto">
-    <p class="text-lg text-gray-800 mb-6">
-        At ZAUQ, we believe jewelry is more than just an accessory — it’s a feeling.
-        Our designs are made to inspire confidence, represent your bonds, and elevate your everyday style. Whether you're gifting or treating yourself, we’re here to make it special.
-    </p>
-    <p class="text-lg text-gray-800">
-        ZAUQ is a modern jewelry brand dedicated to celebrating elegance and individuality. Every piece is handpicked with love to help you shine every day.
-    </p>
-</section>
-
-<section class="bg-white py-10 px-4">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="product border shadow-md rounded-lg p-4">
-            <img src="https://i.postimg.cc/d3grSYfj/IMG-20250801-233501-232.jpg" alt="Black Chain" class="w-full h-64 rounded-md">
-            <h3 class="text-2xl font-semibold mt-4">Black Chain</h3>
-            <p class="text-gray-600 mt-2">Bold. Elegant. Minimalist.</p>
-            <p class="text-gray-600">Perfect for everyday wear or a night out.</p>
-            <a href="https://wa.me/923001234567" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full">Contact on WhatsApp</a>
-        </div>
-        <div class="product border shadow-md rounded-lg p-4">
-            <img src="https://i.postimg.cc/kgsFqkRq/bestie.jpg" alt="Bestie Locket" class="w-full h-64 rounded-md">
-            <h3 class="text-2xl font-semibold mt-4">Bestie Locket</h3>
-            <p class="text-gray-600 mt-2">Celebrate your bond in style.</p>
-            <p class="text-gray-600">A perfect gift for your closest friend.</p>
-            <a href="https://wa.me/923001234567" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full">Contact on WhatsApp</a>
-        </div>
+  </style>
+</head>
+<body class="bg-primary text-white">
+  <header class="text-center p-6 bg-accent text-primary">
+    <img src="https://i.postimg.cc/jS7gqTnp/IMG-20250805-095209.jpg" alt="ZAUQ Logo" class="mx-auto w-32 h-auto rounded-full shadow-lg">
+    <h1 class="text-4xl font-bold fade-in">ZAUQ</h1>
+    <p class="text-lg fade-in">Elegance in Every Detail</p>
+    <p class="text-sm italic fade-in mt-2">Handcrafted luxury jewelry for every soul ✨</p>
+    <p class="text-sm mt-2 fade-in max-w-xl mx-auto">ZAUQ is a celebration of culture, elegance, and beauty. Each piece is crafted with love and care to bring timeless charm into your life.</p>
+    <div class="flex justify-center gap-4 mt-4">
+      <a href="https://instagram.com/zauq.store" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+      </a>
+      <a href="https://wa.me/923001234567" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6">
+      </a>
     </div>
+  </header>  <main class="p-6">
+    <section class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white text-primary rounded-lg p-4 shadow-lg fade-in">
+        <img src="https://i.postimg.cc/d3grSYfj/IMG-20250801-233501-232.jpg" alt="Black Chain" class="w-full h-auto rounded-md">
+        <h2 class="text-2xl mt-2 font-bold">Black Chain</h2>
+        <p class="text-sm mt-1">Minimalist black pendant chain with a bold edge.</p>
+        <p class="text-sm">Perfect for those who love sharp, sleek accessories.</p>
+        <a href="https://wa.me/923001234567" target="_blank" class="inline-block mt-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Contact on WhatsApp</a>
+      </div>
+      <div class="bg-white text-primary rounded-lg p-4 shadow-lg fade-in">
+        <img src="https://i.postimg.cc/kgsFqkRq/bestie.jpg" alt="Bestie Locket" class="w-full h-auto rounded-md">
+        <h2 class="text-2xl mt-2 font-bold">Bestie Locket</h2>
+        <p class="text-sm mt-1">Cute double-heart locket made for friendship goals.</p>
+        <p class="text-sm">Share memories, love, and style in one perfect piece.</p>
+        <a href="https://wa.me/923001234567" target="_blank" class="inline-block mt-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Contact on WhatsApp</a>
+      </div>
+    </section><section class="mt-10 fade-in">
+  <h3 class="text-2xl font-bold text-center">Leave a Review</h3>
+  <form id="reviewForm" class="flex flex-col items-center gap-4 mt-4">
+    <input type="text" id="name" placeholder="Your Name" class="px-4 py-2 rounded text-black w-64" required>
+    <textarea id="review" placeholder="Your Review" class="px-4 py-2 rounded text-black w-64" required></textarea>
+    <button type="submit" class="bg-accent text-primary px-4 py-2 rounded hover:bg-yellow-400">Submit Review</button>
+  </form>
+  <div id="reviews" class="mt-6 space-y-4"></div>
 </section>
 
-<section class="bg-gray-100 py-10 px-4">
-    <div class="max-w-2xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-6">Customer Reviews</h2>
-        <div class="space-y-6">
-            <div class="bg-white p-4 rounded-lg shadow">
-                <p class="text-gray-700 italic">"Absolutely love the quality and elegance. Got so many compliments!"</p>
-                <p class="mt-2 text-right font-semibold">– Ayesha R.</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow">
-                <p class="text-gray-700 italic">"My bestie adored the locket. Beautiful packaging and detail!"</p>
-                <p class="mt-2 text-right font-semibold">– Hira K.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-black text-white py-6 text-center">
-    <p class="text-lg">&copy; 2025 ZAUQ. All rights reserved.</p>
-    <p class="mt-2">Follow us on Instagram: <a href="https://instagram.com/zauq.store" class="text-blue-400 hover:underline">@zauq.store</a></p>
-</footer>
-
-</body></html>
+  </main>  <footer class="text-center text-sm p-4 bg-accent text-primary fade-in">
+    © 2025 ZAUQ. All rights reserved.
+  </footer>  <script>
+    const form = document.getElementById('reviewForm');
+    const reviewsContainer = document.getElementById('reviews');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const review = document.getElementById('review').value;
+      const div = document.createElement('div');
+      div.className = 'bg-white text-primary p-4 rounded shadow';
+      div.innerHTML = `<strong>${name}</strong><p>${review}</p>`;
+      reviewsContainer.appendChild(div);
+      form.reset();
+    });
+  </script></body>
+                 </html>
