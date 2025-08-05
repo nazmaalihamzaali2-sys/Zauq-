@@ -9,28 +9,38 @@
   <style>
     body {
       font-family: 'Outfit', sans-serif;
-      background-color: #fdf6f0; /* premium beige */
+      background-color: #fdf6f0;
       color: #2f2f2f;
     }
-
     h1, h2, h3 {
       font-family: 'Playfair Display', serif;
     }
 
     .top-bar {
       background-color: #fdf6f0;
-      padding: 10px 0;
-      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .top-bar .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .top-bar .icons {
-      position: absolute;
-      right: 20px;
-      top: 10px;
+      margin-left: auto;
     }
 
     .top-bar .icons a {
-      margin-left: 15px;
+      margin-left: 10px;
     }
 
     .logo-container {
@@ -40,7 +50,7 @@
     }
 
     .logo-container img {
-      width: 160px; /* not too big */
+      width: 150px;
       height: auto;
       border-radius: 9999px;
     }
@@ -125,24 +135,25 @@
 </head>
 <body>
 
-  <!-- Top Section with Icons -->
+  <!-- Top Bar with ZAUQ in center and icons on right -->
   <div class="top-bar">
+    <div class="title">ZAUQ</div>
     <div class="icons">
       <a href="https://wa.me/923414503595" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/WhatsApp_icon.png" alt="WhatsApp" width="30">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/WhatsApp_icon.png" alt="WhatsApp" width="28">
       </a>
       <a href="https://instagram.com/zauq.store" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" width="30">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" width="28">
       </a>
     </div>
   </div>
 
-  <!-- Logo Centered -->
+  <!-- Logo -->
   <div class="logo-container">
     <img src="https://i.postimg.cc/MT74tSYk/IMG-20250805-114140-958.jpg" alt="ZAUQ Logo">
   </div>
 
-  <!-- Brand Title & Tagline -->
+  <!-- Brand Title -->
   <h1 class="zauq-title">ZAUQ</h1>
   <p class="tagline">Elegance in Every Detail</p>
   <p class="description">Jewelry that speaks your soul. Handpicked for besties and beauties alike.</p>
