@@ -16,33 +16,6 @@
       font-family: 'Playfair Display', serif;
     }
 
-    .top-bar {
-      background-color: #fdf6f0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      border-bottom: 1px solid #e5e5e5;
-    }
-
-    .top-bar .title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      font-family: 'Playfair Display', serif;
-      margin: 0 auto;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .top-bar .icons {
-      margin-left: auto;
-    }
-
-    .top-bar .icons a {
-      margin-left: 10px;
-    }
-
     .logo-container {
       display: flex;
       justify-content: center;
@@ -73,6 +46,15 @@
       text-align: center;
       color: #8a6e63;
       margin-top: 8px;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
     }
 
     .products {
@@ -135,19 +117,6 @@
 </head>
 <body>
 
-  <!-- Top Bar with ZAUQ in center and icons on right -->
-  <div class="top-bar">
-    <div class="title">ZAUQ</div>
-    <div class="icons">
-      <a href="https://wa.me/923414503595" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/WhatsApp_icon.png" alt="WhatsApp" width="28">
-      </a>
-      <a href="https://instagram.com/zauq.store" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" width="28">
-      </a>
-    </div>
-  </div>
-
   <!-- Logo -->
   <div class="logo-container">
     <img src="https://i.postimg.cc/MT74tSYk/IMG-20250805-114140-958.jpg" alt="ZAUQ Logo">
@@ -157,6 +126,16 @@
   <h1 class="zauq-title">ZAUQ</h1>
   <p class="tagline">Elegance in Every Detail</p>
   <p class="description">Jewelry that speaks your soul. Handpicked for besties and beauties alike.</p>
+
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+    <a href="https://wa.me/923414503595" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/WhatsApp_icon.png" alt="WhatsApp" width="40">
+    </a>
+    <a href="https://instagram.com/zauq.store" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" width="40">
+    </a>
+  </div>
 
   <!-- Products -->
   <section class="products">
