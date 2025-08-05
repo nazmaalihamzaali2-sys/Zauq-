@@ -5,94 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ZAUQ - Elegance in Every Detail</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #fffaf5;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
     }
-    h2 {
+    .product-title {
       font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
     }
-    .product-desc {
-      font-family: 'Playfair Display', serif;
+    .product-card {
+      background: linear-gradient(to bottom right, #ffffff, #f3f3f3);
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .fade-in {
-      animation: fadeIn 2s ease-in-out;
+    .product-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .product-img {
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover .product-img {
+      transform: scale(1.05);
+    }
+    .whatsapp-btn {
+      background-color: #000;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: #111;
+      transform: scale(1.02);
+    }
+    .logo {
+      max-height: 60px;
     }
   </style>
 </head>
 <body class="text-gray-800">
 
-  <!-- Logo and Header -->
-  <header class="text-center py-6 bg-white shadow-md">
-    <img src="https://i.postimg.cc/jS7gqTnp/IMG-20250805-095209.jpg" alt="ZAUQ Logo" class="mx-auto w-32 mb-4">
-    <h1 class="text-4xl font-bold tracking-wider">ZAUQ</h1>
-    <p class="text-lg italic text-gray-600">Elegance in every detail</p>
-    <p class="text-sm mt-2 text-gray-500">Where timeless jewelry meets modern elegance. Curated with passion, worn with pride.</p>
+  <!-- Header -->
+  <header class="flex items-center justify-between p-6 bg-white shadow">
+    <img src="https://i.imgur.com/V7x7fTw.jpg" alt="ZAUQ Logo" class="logo bg-white p-1 rounded-lg"/>
+    <div class="flex gap-4 items-center">
+      <a href="https://wa.me/923414503595" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/000000/whatsapp.png" alt="WhatsApp">
+      </a>
+      <a href="https://instagram.com/zauq.store" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png" alt="Instagram">
+      </a>
+    </div>
   </header>
 
-  <!-- Social Icons -->
-  <div class="flex justify-center space-x-4 mt-4">
-    <a href="https://instagram.com/zauq.store" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" class="w-6 h-6">
-    </a>
-    <a href="https://wa.me/923414503595" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="w-6 h-6">
-    </a>
-  </div>
-
-  <!-- Products Section -->
-  <section class="mt-10 px-6">
-    <div class="grid gap-10 md:grid-cols-2 fade-in">
-      <!-- Product 1 -->
-      <div class="bg-white p-6 shadow-lg rounded-lg">
-        <img src="https://i.postimg.cc/d3grSYfj/IMG-20250801-233501-232.jpg" alt="Black Chain" class="w-full h-64 object-cover rounded">
-        <h2 class="text-2xl font-semibold mt-4">Black Chain</h2>
-        <p class="text-sm text-gray-700 mt-1 font-semibold">Price: Rs. 799</p>
-        <p class="text-sm text-gray-600 product-desc mt-1">Elegant black chain perfect for all outfits.</p>
-        <p class="text-sm text-gray-600 product-desc">Minimalist yet bold. A modern statement.</p>
-        <a href="https://wa.me/923414503595?text=Hey! I want to know more details about the Black Chain." target="_blank">
-          <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="mt-4 w-6 h-6">
-        </a>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="bg-white p-6 shadow-lg rounded-lg">
-        <img src="https://i.postimg.cc/kgsFqkRq/bestie.jpg" alt="Bestie Locket" class="w-full h-64 object-cover rounded">
-        <h2 class="text-2xl font-semibold mt-4">Bestie Locket</h2>
-        <p class="text-sm text-gray-700 mt-1 font-semibold">Price: Rs. 649</p>
-        <p class="text-sm text-gray-600 product-desc mt-1">Perfect gift for your best friend.</p>
-        <p class="text-sm text-gray-600 product-desc">Delicate design with a personal touch.</p>
-        <a href="https://wa.me/923414503595?text=Hey! I want to know more details about the Bestie Locket." target="_blank">
-          <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="mt-4 w-6 h-6">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Leave Review Button -->
-  <section class="mt-10 text-center">
-    <a href="https://wa.me/923414503595?text=Hey! I want to leave a review for ZAUQ." target="_blank">
-      <button class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-black transition">Leave a Review</button>
-    </a>
-  </section>
-
-  <!-- About Brand -->
-  <section class="mt-16 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl font-bold mb-2">About ZAUQ</h2>
-    <p class="text-gray-600 leading-relaxed">
-      ZAUQ is more than just a jewelry store — it’s a statement of style and elegance. We handpick every piece to reflect sophistication and individuality. Crafted for those who value art, emotion, and timeless beauty.
+  <!-- Brand Logo + Description -->
+  <section class="text-center py-10 px-4">
+    <img src="https://i.imgur.com/V7x7fTw.jpg" alt="ZAUQ Logo" class="mx-auto h-20 mb-4 rounded-md shadow-md"/>
+    <p class="max-w-xl mx-auto text-lg text-gray-600">
+      Where elegance meets identity. At ZAUQ, we craft each piece to speak for your unique style. Whether it's a statement locket or a minimalist chain, our collection brings your personality to life.
     </p>
   </section>
 
-  <!-- Footer -->
-  <footer class="mt-16 text-center text-sm text-gray-500 py-6">
-    &copy; 2025 ZAUQ. All rights reserved.
-  </footer>
+  <!-- Products -->
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pb-12">
+    <!-- Product 1 -->
+    <div class="product-card p-6 text-center">
+      <img src="https://i.imgur.com/IMihEps.jpg" alt="Black Chain" class="w-full h-64 object-cover mb-4 rounded-xl product-img"/>
+      <h2 class="product-title mb-2">Black Chain</h2>
+      <p class="text-sm text-gray-600 mb-2">Elegant and bold, this black chain adds a modern touch to your outfit.</p>
+      <p class="text-lg font-semibold text-gray-800 mb-4">Rs. 399</p>
+      <a href="https://wa.me/923414503595?text=Hey%2C%20I%20want%20to%20know%20more%20about%20Black%20Chain" target="_blank">
+        <button class="whatsapp-btn">
+          Order on WhatsApp
+        </button>
+      </a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card p-6 text-center">
+      <img src="https://i.imgur.com/0hda3mt.jpg" alt="Bestie Locket" class="w-full h-64 object-cover mb-4 rounded-xl product-img"/>
+      <h2 class="product-title mb-2">Bestie Locket</h2>
+      <p class="text-sm text-gray-600 mb-2">Celebrate friendship with this classy, heartfelt locket for your bestie.</p>
+      <p class="text-lg font-semibold text-gray-800 mb-4">Rs. 599</p>
+      <a href="https://wa.me/923414503595?text=Hey%2C%20I%20want%20to%20know%20more%20about%20Bestie%20Locket" target="_blank">
+        <button class="whatsapp-btn">
+          Order on WhatsApp
+        </button>
+      </a>
+    </div>
+  </section>
 </body>
 </html>
