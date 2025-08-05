@@ -1,167 +1,167 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZAUQ - Elegance in Every Detail</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Outfit&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Outfit', sans-serif;
-      background-color: #fdf6f0;
-      color: #2f2f2f;
-    }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-    }
-
-    .logo-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    .logo-container img {
-      width: 150px;
-      height: auto;
-      border-radius: 9999px;
-    }
-
-    .zauq-title {
-      text-align: center;
-      font-size: 2.2rem;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .tagline {
-      text-align: center;
-      font-size: 1.2rem;
-      color: #6b4f4f;
-      margin-top: 5px;
-    }
-
-    .description {
-      text-align: center;
-      color: #8a6e63;
-      margin-top: 8px;
-    }
-
-    .products {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .product {
-      background-color: #222;
-      color: #eee;
-      border-radius: 15px;
-      padding: 1rem;
-      width: 300px;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    }
-
-    .product img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .product h2 {
-      color: gold;
-      font-size: 1.3rem;
-      margin: 10px 0 5px;
-    }
-
-    .product a {
-      display: inline-block;
-      margin-top: 10px;
-      background-color: #25D366;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .product a:hover {
-      background-color: #128C7E;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem 1rem 1rem;
-      background-color: #000;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-
-    footer span {
-      display: block;
-      margin-top: 4px;
-      color: #e0c063;
-    }
-
-    .footer-icons {
-      margin-top: 10px;
-    }
-
-    .footer-icons a {
-      margin: 0 10px;
-    }
-
-    .footer-icons img {
-      width: 35px;
-      height: 35px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAUQ - Elegance in Every Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #faf7f2;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .product-card {
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #d4a373 0%, #faedcd 100%);
+            color: #6c584c;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        .product-image {
+            height: 320px;
+            object-fit: cover;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+        
+        .product-card:hover .product-image {
+            transform: scale(1.03);
+        }
+        
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 4px 6px rgba(37, 211, 102, 0.2);
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 211, 102, 0.3);
+        }
+        
+        .price-tag {
+            background: linear-gradient(135deg, #f8edeb 0%, #fae1dd 100%);
+            color: #6c584c;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 700;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://i.postimg.cc/MT74tSYk/IMG-20250805-114140-958.jpg" alt="ZAUQ Logo" class="h-24 w-auto mb-4">
+                <h1 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-2">ZAUQ</h1>
+                <p class="text-lg text-gray-600 italic">Elegance in Every Detail</p>
+            </div>
+        </div>
+    </header>
 
-  <!-- Logo -->
-  <div class="logo-container">
-    <img src="https://i.postimg.cc/MT74tSYk/IMG-20250805-114140-958.jpg" alt="ZAUQ Logo">
-  </div>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-amber-50 to-rose-50 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto">
+                Jewelry that speaks your soul. Handpicked for besties and beauties alike.
+            </p>
+        </div>
+    </section>
 
-  <!-- Brand Title -->
-  <h1 class="zauq-title">ZAUQ</h1>
-  <p class="tagline">Elegance in Every Detail</p>
-  <p class="description">Jewelry that speaks your soul. Handpicked for besties and beauties alike.</p>
+    <!-- Products Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-3xl font-bold text-center text-gray-800 mb-12">Our Collection</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <!-- Product 1 -->
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <div class="product-badge">BESTSELLER</div>
+                        <img src="https://i.postimg.cc/brR7YhG0/IMG-20250801-WA0025.jpg" alt="Black Chain" 
+                             class="w-full product-image">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="title-font text-2xl font-semibold text-gray-800">Black Chain</h3>
+                            <span class="price-tag">Rs. 399</span>
+                        </div>
+                        <p class="text-gray-600 mb-5">A sleek black chain that adds edge to any outfit. Perfect for layering or wearing solo.</p>
+                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20get%20more%20details%20on%20Black%20Chain" 
+                           class="whatsapp-btn w-full text-center text-white px-6 py-3 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2 text-lg"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <div class="product-badge">NEW ARRIVAL</div>
+                        <img src="https://i.postimg.cc/tC2KL9Gp/IMG-20250801-WA0040.jpg" alt="Bestie Locket" 
+                             class="w-full product-image">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="title-font text-2xl font-semibold text-gray-800">Bestie Locket</h3>
+                            <span class="price-tag">Rs. 599</span>
+                        </div>
+                        <p class="text-gray-600 mb-5">A sentimental locket designed to celebrate friendship. Holds your favorite memories.</p>
+                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20get%20more%20details%20on%20Bestie%20Locket" 
+                           class="whatsapp-btn w-full text-center text-white px-6 py-3 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2 text-lg"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Products -->
-  <section class="products">
-    <div class="product">
-      <img src="https://i.postimg.cc/brR7YhG0/IMG-20250801-WA0025.jpg" alt="Black Chain">
-      <h2>Black Chain</h2>
-      <p>Price: Rs. 399</p>
-      <a href="https://wa.me/923414503595?text=Hi! I'm interested in the Black Chain from ZAUQ." target="_blank">Contact on WhatsApp</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.postimg.cc/tC2KL9Gp/IMG-20250801-WA0040.jpg" alt="Bestie Locket">
-      <h2>Bestie Locket</h2>
-      <p>Price: Rs. 599</p>
-      <a href="https://wa.me/923414503595?text=Hi! I'm interested in the Bestie Locket from ZAUQ." target="_blank">Contact on WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- Footer with icons -->
-  <footer>
-    &copy; 2025 ZAUQ. All rights reserved.
-    <span>Follow us on Instagram: @zauq.store</span>
-
-    <div class="footer-icons">
-      <a href="https://wa.me/923414503595" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-      </a>
-      <a href="https://instagram.com/zauq.store" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
-      </a>
-    </div>
-  </footer>
-
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center">
+                <h2 class="title-font text-2xl font-bold mb-4">ZAUQ</h2>
+                <p class="text-gray-300 text-center mb-6">Elegance in Every Detail</p>
+                <div class="flex space-x-4 mb-6">
+                    <a href="https://www.instagram.com/zauq.store/" target="_blank" class="text-gray-300 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/923414503595" target="_blank" class="text-gray-300 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-sm text-gray-400">© 2023 ZAUQ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
-          </html>
+</html>
