@@ -72,6 +72,22 @@
             border-radius: 20px;
             font-weight: 700;
         }
+        
+        .review-form {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #6c584c 0%, #a98467 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(108, 88, 76, 0.3);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -144,6 +160,87 @@
         </div>
     </section>
 
+    <!-- Review Section -->
+    <section class="py-16 bg-gradient-to-b from-amber-50 to-rose-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="title-font text-3xl font-bold text-center text-gray-800 mb-12">Share Your Experience</h2>
+            
+            <div class="review-form p-8">
+                <form action="mailto:zauqstore4@gmail.com" method="post" enctype="text/plain" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-200" 
+                                   placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-200" 
+                                   placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="product" class="block text-gray-700 font-medium mb-2">Product (Optional)</label>
+                        <select id="product" name="product" 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-200">
+                            <option value="">Select a product (if applicable)</option>
+                            <option value="Black Stone Bracelet">Black Stone Bracelet</option>
+                            <option value="Pair of Bestie's Lockets">Pair of Bestie's Lockets</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="rating" class="block text-gray-700 font-medium mb-2">Rating</label>
+                        <div class="flex items-center space-x-2">
+                            <input type="radio" id="star5" name="rating" value="5" class="hidden peer" required>
+                            <label for="star5" class="text-2xl text-gray-300 cursor-pointer peer-checked:text-amber-400 hover:text-amber-400">
+                                <i class="fas fa-star"></i>
+                            </label>
+                            
+                            <input type="radio" id="star4" name="rating" value="4" class="hidden peer">
+                            <label for="star4" class="text-2xl text-gray-300 cursor-pointer peer-checked:text-amber-400 hover:text-amber-400">
+                                <i class="fas fa-star"></i>
+                            </label>
+                            
+                            <input type="radio" id="star3" name="rating" value="3" class="hidden peer">
+                            <label for="star3" class="text-2xl text-gray-300 cursor-pointer peer-checked:text-amber-400 hover:text-amber-400">
+                                <i class="fas fa-star"></i>
+                            </label>
+                            
+                            <input type="radio" id="star2" name="rating" value="2" class="hidden peer">
+                            <label for="star2" class="text-2xl text-gray-300 cursor-pointer peer-checked:text-amber-400 hover:text-amber-400">
+                                <i class="fas fa-star"></i>
+                            </label>
+                            
+                            <input type="radio" id="star1" name="rating" value="1" class="hidden peer">
+                            <label for="star1" class="text-2xl text-gray-300 cursor-pointer peer-checked:text-amber-400 hover:text-amber-400">
+                                <i class="fas fa-star"></i>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="review" class="block text-gray-700 font-medium mb-2">Your Review</label>
+                        <textarea id="review" name="review" rows="5" 
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-200" 
+                                  placeholder="Share your experience with us..." required></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" 
+                                class="submit-btn text-white font-medium px-8 py-3 rounded-lg inline-flex items-center">
+                            <i class="fas fa-paper-plane mr-2"></i> Submit Review
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4">
@@ -163,4 +260,4 @@
         </div>
     </footer>
 </body>
-                            </html>
+</html>
