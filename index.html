@@ -44,6 +44,19 @@
             z-index: 2;
         }
         
+        .sale-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: linear-gradient(135deg, #e63946 0%, #ff758f 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
         .product-image {
             height: 320px;
             object-fit: cover;
@@ -71,6 +84,19 @@
             padding: 6px 14px;
             border-radius: 20px;
             font-weight: 700;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.9rem;
+            margin-right: 8px;
+        }
+        
+        .sale-price {
+            color: #e63946;
+            font-weight: 700;
+            font-size: 1.1rem;
         }
         
         .review-form {
@@ -116,8 +142,8 @@
         <div class="container mx-auto px-4">
             <h2 class="title-font text-3xl font-bold text-center text-gray-800 mb-12">Our Collection</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
-                <!-- Product 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <!-- Original Product 1 -->
                 <div class="product-card bg-white">
                     <div class="relative overflow-hidden">
                         <div class="product-badge">BESTSELLER</div>
@@ -126,18 +152,20 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="title-font text-2xl font-semibold text-gray-800">Black Stone Bracelet</h3>
-                            <span class="price-tag">Rs. 399</span>
+                            <h3 class="title-font text-xl font-semibold text-gray-800">Black Stone Bracelet</h3>
+                            <div class="flex flex-col items-end">
+                                <span class="price-tag">Rs. 399</span>
+                            </div>
                         </div>
                         <p class="text-gray-600 mb-5">A sleek black chain that adds edge to any outfit. Perfect for layering or wearing solo.</p>
-                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20get%20more%20details%20on%20Black%20Stone%20Bracelet" 
+                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20buy%20Black%20Stone%20Bracelet" 
                            class="whatsapp-btn w-full text-center text-white px-6 py-3 rounded-lg flex items-center justify-center">
                             <i class="fab fa-whatsapp mr-2 text-lg"></i> Order Now
                         </a>
                     </div>
                 </div>
                 
-                <!-- Product 2 -->
+                <!-- Original Product 2 -->
                 <div class="product-card bg-white">
                     <div class="relative overflow-hidden">
                         <div class="product-badge">NEW ARRIVAL</div>
@@ -146,11 +174,85 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="title-font text-2xl font-semibold text-gray-800">Pair of Bestie's Lockets</h3>
-                            <span class="price-tag">Rs. 599</span>
+                            <h3 class="title-font text-xl font-semibold text-gray-800">Pair of Bestie's Lockets</h3>
+                            <div class="flex flex-col items-end">
+                                <span class="price-tag">Rs. 599</span>
+                            </div>
                         </div>
                         <p class="text-gray-600 mb-5">A sentimental locket designed to celebrate friendship. Holds your favorite memories.</p>
-                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20get%20more%20details%20on%20Pair%20of%20Bestie's%20Lockets" 
+                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20buy%20Pair%20of%20Bestie's%20Lockets" 
+                           class="whatsapp-btn w-full text-center text-white px-6 py-3 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2 text-lg"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- New Product 1 -->
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <div class="product-badge">LUXURY</div>
+                        <div class="sale-badge">30% OFF</div>
+                        <img src="https://i.postimg.cc/B60Lw9Gx/IMG-20250807-002707-148.jpg" alt="Rolex-Inspired Luxury Gold Bracelet" 
+                             class="w-full product-image">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="title-font text-xl font-semibold text-gray-800">Rolex-Inspired Luxury Gold Bracelet</h3>
+                            <div class="flex flex-col items-end">
+                                <span class="sale-price">Rs. 1,499</span>
+                                <span class="original-price">Rs. 2,143</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-5">Classic Elegance, Modern Edge. Inspired by Rolex, designed for those who demand excellence.</p>
+                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20buy%20Rolex-Inspired%20Luxury%20Gold%20Bracelet" 
+                           class="whatsapp-btn w-full text-center text-white px-6 py-3 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2 text-lg"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- New Product 2 -->
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <div class="product-badge">TRENDING</div>
+                        <div class="sale-badge">30% OFF</div>
+                        <img src="https://i.postimg.cc/5t3b1ZC5/IMG-20250807-002710-589.jpg" alt="Butterfly Charm Gold Link Bracelet" 
+                             class="w-full product-image">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="title-font text-xl font-semibold text-gray-800">Butterfly Charm Gold Link Bracelet</h3>
+                            <div class="flex flex-col items-end">
+                                <span class="sale-price">Rs. 349</span>
+                                <span class="original-price">Rs. 499</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-5">Elegant gold link bracelet with butterfly charm. Soft, stylish, and perfect for daily wear.</p>
+                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20buy%20Butterfly%20Charm%20Gold%20Link%20Bracelet" 
+                           class="whatsapp-btn w-full text-center text-white px-6 py-3 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2 text-lg"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- New Product 3 -->
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <div class="product-badge">SET OF 2</div>
+                        <div class="sale-badge">30% OFF</div>
+                        <img src="https://i.postimg.cc/QtCGDVss/IMG-20250807-002715-715.jpg" alt="Pair of Golden Plane Rings" 
+                             class="w-full product-image">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="title-font text-xl font-semibold text-gray-800">Pair of Golden Plane Rings</h3>
+                            <div class="flex flex-col items-end">
+                                <span class="sale-price">Rs. 249</span>
+                                <span class="original-price">Rs. 356</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-5">Minimal design, maximum elegance. Classic golden rings for any style. Perfect for daily wear.</p>
+                        <a href="https://wa.me/923414503595?text=Hey%20I%20want%20to%20buy%20Pair%20of%20Golden%20Plane%20Rings" 
                            class="whatsapp-btn w-full text-center text-white px-6 py-3 rounded-lg flex items-center justify-center">
                             <i class="fab fa-whatsapp mr-2 text-lg"></i> Order Now
                         </a>
@@ -189,6 +291,9 @@
                             <option value="">Select a product (if applicable)</option>
                             <option value="Black Stone Bracelet">Black Stone Bracelet</option>
                             <option value="Pair of Bestie's Lockets">Pair of Bestie's Lockets</option>
+                            <option value="Rolex-Inspired Luxury Gold Bracelet">Rolex-Inspired Luxury Gold Bracelet</option>
+                            <option value="Butterfly Charm Gold Link Bracelet">Butterfly Charm Gold Link Bracelet</option>
+                            <option value="Pair of Golden Plane Rings">Pair of Golden Plane Rings</option>
                             <option value="Other">Other</option>
                         </select>
                     </div>
@@ -260,4 +365,4 @@
         </div>
     </footer>
 </body>
-</html>
+    </!html>
